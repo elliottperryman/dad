@@ -1,0 +1,17 @@
+python3 location_finding.py \
+    --num-steps 50000 \
+    --num-inner-samples 2000 \
+    --num-outer-samples 2000 \
+    -p 1 \
+    --num-sources 2 \
+    --noise-scale 0.5 \
+    --base-signal 0.1 \
+    --max-signal 1e-4 \
+    --lr 5e-5 \
+    --gamma 0.98 \
+    --num-experiments 30 \
+    --encoding-dim 16 \
+    --hidden-dim 256 \
+    --design-network-type dad \
+    --device cpu \
+    --mlflow-experiment-name location_finding
